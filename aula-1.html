@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery aula 01</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--
+    todo vez que for necessario acessar um elemento cifrao e o elemento
+$()
+
+-->
+<script>
+//quando o documento estiver pronto executa a funçao
+$(document).ready(function(){
+//chamando a tag a/ o elemento a/quando for clicado
+$("a").click(function (e) { 
+    $("#titulo").css("color", "red");
+    //mudar o texto
+    $("#titulo").text ("curso JQ");
+    // oculta o texto
+    $("#titulo").hide();
+    //apresenta ou esconde um elemento
+    $("#titulo").fadeToggle();
+});
+
+
+})
+
+</script>
+<body>
+    <h1 id="titulo">hello word</h1>
+    <a href="#">click</a>
+</body>
+</html>
